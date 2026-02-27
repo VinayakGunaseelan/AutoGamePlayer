@@ -1,14 +1,21 @@
 import pyautogui as pa
 import time
+import pandas as pd
 
-# Give some time to switch to the target application
-time.sleep(10)
+def main():
 
-for i in range(1):
-    pa.press('x')
-    time.sleep(5)
-    pa.press('f')
-    time.sleep(5)
-    pa.press('c')
+    print('go to game window pls')
+    pa.sleep(10)
 
-print('donee')
+    df = pd.read_csv("cursed_techniques.csv")
+
+    sorted_df = df.sort_values(by='DPS', ascending=False)
+
+    for index, row in df.iterrows():
+        pa.press(row['Key'])
+        time.sleep(row['Duration/s']+1)
+    
+    print("Cycle complete")
+
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,5 @@
-﻿Cursed Technique,Moves,Duration/s,Cooldown/s,Damage
-Limitless,maximum,4,5,650000
-,Lapse,5,4,510000
-,Red,2,3,170000
-,Purple,7,12,1300000
+﻿Cursed Technique,Moves,Key,Duration/s,Cooldown/s,Damage,DPS
+Limitless,maximum,x,4,5,650000,72222.22222
+,Lapse,f,5,4,510000,56666.66667
+,Red,e,2,3,170000,34000
+,Purple,c,7,12,1300000,68421.05263
