@@ -11,9 +11,9 @@ def main():
 
     sorted_df = df.sort_values(by='DPS', ascending=False)
 
-    for index, row in df.iterrows():
-        pa.press(row['Key'])
-        time.sleep(row['Duration/s']+1)
+    for index, row in df.iterrows():  # iterrows must have (), index is the row number
+        pa.press(row['Key']) # row is the actual data here
+        time.sleep(row['Duration/s']+1) # added +1 incase time doesnt match its time.sleep not pa.sleep
     
     print("Cycle complete")
 
