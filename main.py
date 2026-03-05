@@ -7,7 +7,7 @@ from capture import capturing
 def main():
 
     print('go to game window pls')
-    time.sleep(10 + random.uniform(-0.5, 0.5))
+    time.sleep(10 + random.uniform(-0.5, 0.5))xc
 
     df = pd.read_csv("cursed_techniques.csv")
 
